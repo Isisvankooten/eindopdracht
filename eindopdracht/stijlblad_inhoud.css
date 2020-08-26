@@ -1,0 +1,37 @@
+
+body {
+        background-color: black;
+       
+    }
+
+h1 { text-align: center;
+     text-shadow: 2px 2px }
+h2 { text-align: left; }
+p 	{text-align: left; }
+footer {text-align: center}
+/* basis voor standaard */
+
+h1	{ text-transform: uppercase; /* alles met een hoofdletter */
+    font-size: 180%;
+    color: #333;
+    font-weight: thick;
+    font-family: Arial, Helvetica, sans-serif;
+    border-width: medium;
+	
+	}
+h2	{ text-transform: capitalize; /* elk woord met een hoofdletter */
+	font-size: 120%;
+    font-weight: thick;
+    font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	
+	}
+P	{ Line-height: 100%;
+	word-spacing: 0.5em;
+    text-indent: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+}
+    

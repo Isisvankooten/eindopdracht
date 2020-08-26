@@ -1,0 +1,107 @@
+/* grid ------------------------------------------------*/
+.parent 
+       {
+       display: grid;
+       grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr 1fr 30px;
+       grid-template-rows: 5fr 1fr 2fr 1fr;
+       height: 1000px;
+       grid-template-areas:
+        ". header header header header header header. "
+        " . nav nav nav nav nav nav . "
+        ". main main main main main main . "
+        ". footer footer footer footer footer footer . ";
+       border-block-style: ;    
+        } 
+       } /* deze { en de ; hierboven geven een foutmelding; ik weet niet waarom */
+header,
+nav,
+main,
+footer 
+        {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        }
+header { 
+         grid-area: header;
+         background-image: url("heelveelpuppies.jpg");
+         background-repeat: repeat-x;
+       }
+nav    {  
+        grid-area: nav; 
+       }
+ul     {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        background-color: pink ;
+       }
+li     {
+        display: block;
+        float:  left;
+        width: 20%;
+        color: rgb(112, 2, 22);
+        background-color: rgb(70, 58, 70);
+        text-align: center;
+        padding: 8px;
+        text-decoration: none;
+        border: 2px ridge rgb(36, 31, 35);
+        border-radius: 25px;
+       }
+a      {
+        display: block;
+        color: lightpink;
+        padding: 8px;
+        background-color:rgb(70, 58, 70);
+       }
+li :hover
+       {
+        background-color: rgb(121, 111, 117);
+       }
+main   {  
+        grid-area: main;
+        background-color: pink;
+        padding: 20px;
+       }
+footer { 
+        grid-area: footer; 
+        background-color: rgb(70, 58, 70);
+        color: lightpink;
+        text-align: justify;
+        font-size: large;
+       }
+body {
+        background-color: pink;
+      }
+            
+@media screen and (min-width: 600px) 
+{
+  body 
+       {
+    color: #333333;
+    padding: 20px;
+    background-color: black;
+       }
+  header 
+       {
+       font-size: 35px;
+       font-optical-sizing: auto;
+       }
+     @media only screen and (max-width: 320px) 
+     {
+       .header 
+       {
+         font-size: 24px;
+       }
+     }
+}
+
+
+
+
+
+
+
+
+        
